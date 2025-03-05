@@ -3,15 +3,14 @@ import PackageDescription
 
 let package = Package(
     name: "CorePlot",
-    platforms: [.iOS("15.0")],
+    platforms: [.iOS("13.0")],
     products: [
         .library(name: "CorePlot", targets: ["CorePlot"])
     ],
     targets: [
         .target(
             name: "CorePlot",
-            path: "framework",
-            sources: ["Sources", "iPhoneOnly"]
+            path: "framework/Source",
             publicHeadersPath: "."
         )
     ]
