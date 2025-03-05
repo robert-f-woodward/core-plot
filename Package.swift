@@ -10,7 +10,8 @@ let package = Package(
     targets: [
         .target(
             name: "CorePlot",
-            path: "framework/Source",
+            path: "framework",
+            sources: ["Sources", "iPhoneOnly"]
             publicHeadersPath: "."
         )
     ]
